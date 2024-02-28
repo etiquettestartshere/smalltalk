@@ -1,0 +1,6 @@
+{
+  "SCENEMESSAGE.Settings.BlueChecksName": "Blue Hit Checks",
+  "SCENEMESSAGE.Settings.BlueChecksHint": "Use blue instead of green for hit checks vs AC (may be more red-green colorblind friendly).",
+  "SCENEMESSAGE.Settings.HidePortraitName": "Hide Portraits",
+  "SCENEMESSAGE.Settings.HidePortraitHint": "Remove the portraits from chat cards."
+}

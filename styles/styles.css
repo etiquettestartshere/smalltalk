@@ -1,0 +1,229 @@
+/* 3.0 CHAT CARDS */
+/*[class="chat-message message flexcol ic"]*/
+/*
+:is(.chat-popout, #chat-log) .message:not(.ic) .message-header .message-sender .avatar {
+  display: none;
+}
+*/
+
+:is(.chat-popout, #chat-log) .message {
+  padding: .1em;
+}
+
+:is(.chat-popout, #chat-log) .message .message-header .message-sender .avatar {
+  /*height: 100%;*/
+  place-content: center;
+  position: relative;
+  min-height: unset;
+  bottom: 2px;
+  left: 2px;
+  right: 0px;
+  /*visibility: hidden;*/
+  /*display: none;*/
+}
+
+:is(.chat-popout, #chat-log) .message .message-header .message-sender .avatar img {
+  width: 25px;
+  height: 25px;
+  scale: 100%;
+}
+
+:is(.chat-popout, #chat-log) .message.ooc {
+  border-width: 2px;
+}
+
+/*
+:is(.chat-popout, #chat-log) .message.ooc .message-header .message-sender .avatar,
+:is(.chat-popout, #chat-log) .message.ooc .message-header .message-sender .avatar img {
+  display: none;
+}
+*/
+
+:is(.chat-popout, #chat-log) .message .message-header .message-metadata {
+  margin-top: 4px;
+}
+
+:is(.chat-popout, #chat-log) .message .message-header {
+  margin-bottom: unset;
+  /*margin-bottom: 0.375rem;*/
+  position: relative;
+  /*bottom: 2px;*/
+}
+
+:is(.chat-popout, #chat-log) .message .message-header .message-sender {
+  display: flex;
+  align-items: start;
+}
+
+:is(.chat-popout, #chat-log) .message .message-header .title {
+  font-family: var(--dnd5e-font-roboto-slab);
+  font-size: var(--font-size-12);
+  font-weight: bold;
+  color: var(--color-text-dark-primary);
+  min-height: unset;
+}
+
+/*
+:is(.chat-popout, #chat-log) .message .message-header .name-stacked {
+  flex: 1;
+  display: flex;
+  min-height: unset;
+  flex-direction: column;
+  justify-content: center;
+  line-height: normal;
+  margin-bottom: .2em;
+  margin-top: -.06em;
+  line-height: 18px;
+  position: relative;
+  bottom: .07rem;
+}
+*/
+
+:is(.chat-popout, #chat-log) .message .message-header .name-stacked {
+  flex: 1;
+  display: flex;
+  min-height: unset;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: unset;
+  margin-left: -.4em;
+  margin-top: .0em;
+  line-height: 18px;
+  position: relative;
+  bottom: .0rem;
+  left: -0.1rem;
+}
+
+/*
+:is(.chat-popout, #chat-log) .message.ooc .message-header .name-stacked {
+  margin-left: .2em;
+}
+*/
+
+:is(.chat-popout, #chat-log) .message .message-header .subtitle {
+  /*display: none;*/
+  /*
+  scale: 1%;
+  size: .001rem;
+  */
+  min-height: 1px;
+  max-height: 13px;
+  position: relative;
+  bottom: .3rem;
+  /*visibility: hidden;*/
+}
+
+:is(.chat-popout, #chat-log) .message .message-header .flavor-text {
+  position: relative;
+  top: .38em;
+  margin-bottom: .38em;
+  margin-left: .32em;
+  margin-block-start: -8px;
+}
+
+/*
+:is(.chat-popout, #chat-log) .message[class="chat-message message flexcol ic"] .message-header,
+:is(.chat-popout, #chat-log) .message[class="chat-message message flexcol ic"] > .message-content {
+  display: flex;
+  flex: 1;
+  position: relative;
+  gap: 0px;
+  margin: -4px;
+  white-space: 0px;S
+}
+*/
+
+:is(.chat-popout, #chat-log) .message > .message-header {
+  /*...*/
+}
+
+/*:is(.chat-popout, #chat-log) .message > .message-header,*/
+:is(.chat-popout, #chat-log) .message > .message-content,
+:is(.chat-popout, #chat-log) .message > .message-content:not(:has(div .dnd5e2, .dice-roll/*, .nue*/)) {
+  position: relative;
+  padding: 2px;
+  margin: -4px;
+  margin-bottom: 0.1em;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+/*:not(.dnd5e2 .chat-card, .dice-roll, .dnd5e2 .evaluation)*/
+/*
+:is(.chat-popout, #chat-log) .message .message-header,
+ :is(.chat-popout, #chat-log) .message:not(.dnd5e2) > .message-content {
+  display: flex;
+  flex: 1;
+  position: relative;
+  gap: 0px;
+  margin: -4px;
+  white-space: 0px;
+}
+*/
+
+/* 3.0 CHAT CARD BUTTONS */
+.dnd5e2.chat-card .card-buttons {
+  gap: 0.15rem;
+}
+
+.dnd5e2 button {
+  line-height: 20px;
+}
+
+.dnd5e2.chat-card .description {
+  padding: 0.15rem;
+}
+
+.dnd5e2.chat-card {
+  gap: 0.170rem;
+}
+
+.dice-result .dice-formula {
+  line-height: 20px;
+}
+
+.dnd5e2.chat-card + .dice-roll {
+  margin-top: 0.170rem;
+}
+
+.dice-result .dice-total {
+  font-weight: bold;
+  font-size: var(--font-size-20);
+  padding: 0.075rem;
+  margin-top: 0.170rem;
+  font-family: var(--font-primary);
+  position: relative;
+}
+
+/* 3.0 ROLL EVAL */
+:is(.chat-popout, #chat-log) .message .dnd5e2.evaluation {
+  margin: 0.170rem 0 0;
+  gap: 0;
+}
+
+:is(.chat-popout, #chat-log) .message .dnd5e2.evaluation .target .name-stacked .title {
+  font-size: var(--font-size-13);
+  display: flex;
+  align-items: center;
+  gap: 0.170rem;
+}
+
+:is(.chat-popout, #chat-log) .message .dnd5e2.evaluation .target > img {
+  width: 28px;
+  height: 28px;
+}
+
+* {
+  scrollbar-color: initial;
+}
+
+::-webkit-scrollbar-thumb {
+  border-color: #ff6400;
+}
+
+@-moz-document url-prefix() {
+  * {
+      scrollbar-color: #782e22 #111;
+      scrollbar-width: thin;
+  }
+}

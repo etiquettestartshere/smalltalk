@@ -1,0 +1,9 @@
+:root {
+  --dnd5e-color-success: #1849a3;
+  --dnd5e-color-success-background: #c0c2d0;
+  --dnd5e-color-success-critical: #1755c9;
+}
+
+:is(.chat-popout, #chat-log) .message .dnd5e2.evaluation .target.hit .ac {
+  color: #00318d;
+}

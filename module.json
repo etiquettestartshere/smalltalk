@@ -1,0 +1,32 @@
+{
+  "id": "smalltalkdnd5e",
+  "title": "Small Talk DnD5e",
+  "esmodules": [
+    "setup.mjs"
+  ],
+  "styles": [
+    "styles/styles.css"
+  ],
+  "flags": {"hotReload": {"extensions": ["css", "json"], "paths": ["styles/styles.css", "styles", "lang"]}},
+  "version": "0.1.0",
+  "compatibility": {
+    "minimum": "11",
+    "verified": "11"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ]
+  },
+  "authors": [
+    {
+      "name": "alakshana",
+      "discord": "alakshana",
+      "flags": {}
+    }
+  ]
+}
