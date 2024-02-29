@@ -50,5 +50,16 @@ export class settings {
       requiresReload: true,
       onChange: false
     });
+
+    game.settings.register(MODULE, "hideItemSubtitle", {
+      name: "SCENEMESSAGE.Settings.HideItemSubtitleName",
+      hint: "SCENEMESSAGE.Settings.HideItemSubtitleHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
   };
 };    

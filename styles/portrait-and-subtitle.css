@@ -1,4 +1,3 @@
-
 :is(.chat-popout, #chat-log) .message > .message-header {
   margin-bottom: -1px;
 }
@@ -7,14 +6,3 @@
   position: relative;
   bottom: .05rem;
 }
-
-/*
-:is(.chat-popout, #chat-log) .message > .message-content, :is(.chat-popout, #chat-log) .message > .message-content:not(:has(div .dnd5e2, .dice-roll)) {
-  position: relative;
-  padding: 2px;
-  margin: -4px;
-  margin-bottom: 0.1em;
-  margin-right: 2px;
-  margin-left: 2px;
-}
-*/

@@ -7,6 +7,7 @@ export class smallTalk {
     smallTalk._hidePortrait();
     smallTalk._hideSubtitle();
     smallTalk._hideItemImg();
+    smallTalk._hideItemSubtile();
     smallTalk._portraitAndSubtitle();
     Hooks.on("dnd5e.renderChatMessage", smallTalk._GM);
   };
@@ -39,6 +40,14 @@ export class smallTalk {
     const hideArt = game.settings.get(MODULE, "hideItemImg");
     if (hideArt) {
       const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-item-img.css" />`
+      document.head.insertAdjacentHTML('beforeend', link);
+    };  
+  };
+
+  static _hideItemSubtile() {
+    const hideSub = game.settings.get(MODULE, "hideItemSubtitle");
+    if (hideSub) {
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-item-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
