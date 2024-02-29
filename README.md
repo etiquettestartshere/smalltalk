@@ -15,4 +15,4 @@ All settings are off by default.
 ![image](https://github.com/etiquettestartshere/smalltalk/assets/148253744/543496d5-e17f-478a-8b43-f9b527b1ecf1)
 
 ## Compatibility
-I have not tested compatibility with any other modules that modify chat cards, and unless I use that module myself I am unlikely to (see CONTRIBUTING.md for more info). The only module I personally tested for compatibility is my other chat card based module [Effective Tray](https://github.com/etiquettestartshere/effectivetray)
+I have not tested compatibility with any other modules that modify chat cards, and unless I use that module myself I am unlikely to (see CONTRIBUTING.md for more info). The only module I personally tested for compatibility is my other chat card based module [Effective Tray](https://github.com/etiquettestartshere/effectivetray).
