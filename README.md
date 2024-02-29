@@ -16,3 +16,9 @@ All settings are off by default.
 
 ## Compatibility
 I have not tested compatibility with any other modules that modify chat cards, and unless I use that module myself I am unlikely to (see CONTRIBUTING.md for more info). The only module I personally tested for compatibility is my other chat card based module [Effective Tray](https://github.com/etiquettestartshere/effectivetray).
+___
+###### **Technical Details**
+
+**Scope:** CSS tweaks, some hidden behind settings & brute force additions to the head.
+
+**License:** MIT License.
