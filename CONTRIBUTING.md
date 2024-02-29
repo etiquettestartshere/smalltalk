@@ -1,0 +1,3 @@
+## Contributing to Small Talk
+
+Originally, these were my personal tweaks to the dnd5e 3.0 chat cards, for use in my own private games. I made them a separate module and now use that module in my own private games. These changes are opinionated, and the opinions are mine. I have no desire to maintain two versions, one for myself and one for others, so I am willing to entertain contributions, suggestions, or requests, but do not get your hopes up.
