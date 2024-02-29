@@ -1,6 +1,6 @@
 {
-  "id": "smalltalkdnd5e",
-  "title": "Small Talk DnD5e",
+  "id": "smalltalk",
+  "title": "Small Talk",
   "esmodules": [
     "setup.mjs"
   ],
@@ -37,5 +37,5 @@
       "flags": {}
     }
   ],
-  "url": "https://github.com/etiquettestartshere/smalltalkdnd5e"
+  "url": "https://github.com/etiquettestartshere/smalltalk"
 }

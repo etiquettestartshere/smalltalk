@@ -1,1 +1,1 @@
-export const MODULE = "smalltalkdnd5e"
+export const MODULE = "smalltalk"

@@ -14,7 +14,7 @@ export class smallTalk {
   static _blueChecks() {
     const blue = game.settings.get(MODULE, "blueChecks");
     if (blue) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalkdnd5e/styles/blue-hit-check.css" />`
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/blue-hit-check.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
@@ -22,7 +22,7 @@ export class smallTalk {
   static _hidePortrait() {
     const hideArt = game.settings.get(MODULE, "hidePortrait");
     if (hideArt) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalkdnd5e/styles/hide-portrait.css" />`
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-portrait.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };
   };
@@ -30,7 +30,7 @@ export class smallTalk {
   static _hideSubtitle() {
     const hideSub = game.settings.get(MODULE, "hideSubtitle");
     if (hideSub) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalkdnd5e/styles/hide-subtitle.css" />`
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
@@ -38,7 +38,7 @@ export class smallTalk {
   static _hideItemImg() {
     const hideArt = game.settings.get(MODULE, "hideItemImg");
     if (hideArt) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalkdnd5e/styles/hide-item-img.css" />`
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-item-img.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
@@ -47,7 +47,7 @@ export class smallTalk {
     const hideArt = game.settings.get(MODULE, "hidePortrait");
     const hideSub = game.settings.get(MODULE, "hideSubtitle");
     if (hideArt && hideSub) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalkdnd5e/styles/portrait-and-subtitle.css" />`
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/portrait-and-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
