@@ -1,0 +1,8 @@
+:is(.chat-popout, #chat-log) .message .message-header .subtitle {
+  visibility: hidden;
+}
+
+:is(.chat-popout, #chat-log) .message .message-header .title {
+  position: relative;
+  top: .2rem;
+}

@@ -1,6 +1,10 @@
 {
   "SCENEMESSAGE.Settings.BlueChecksName": "Blue Hit Checks",
   "SCENEMESSAGE.Settings.BlueChecksHint": "Use blue instead of green for hit checks vs AC (may be more red-green colorblind friendly).",
+  "SCENEMESSAGE.Settings.HideItemImgName": "Hide Item Image",
+  "SCENEMESSAGE.Settings.HideItemImgHint": "Hides the item image and subtitle on item chat cards for a smaller card.",
   "SCENEMESSAGE.Settings.HidePortraitName": "Hide Portraits",
-  "SCENEMESSAGE.Settings.HidePortraitHint": "Remove the portraits from chat cards."
+  "SCENEMESSAGE.Settings.HidePortraitHint": "Remove the portraits from chat cards.",
+  "SCENEMESSAGE.Settings.HideSubtitleName": "Hide Subtitle",
+  "SCENEMESSAGE.Settings.HideSubtitleHint": "Hide the subtitle which shows the associated username"
 }

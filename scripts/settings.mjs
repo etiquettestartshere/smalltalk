@@ -28,5 +28,27 @@ export class settings {
       requiresReload: true,
       onChange: false
     });
+
+    game.settings.register(MODULE, "hideSubtitle", {
+      name: "SCENEMESSAGE.Settings.HideSubtitleName",
+      hint: "SCENEMESSAGE.Settings.HideSubtitleHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
+
+    game.settings.register(MODULE, "hideItemImg", {
+      name: "SCENEMESSAGE.Settings.HideItemImgName",
+      hint: "SCENEMESSAGE.Settings.HideItemImgHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
   };
 };    

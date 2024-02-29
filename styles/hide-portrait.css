@@ -3,5 +3,5 @@
 }
 
 :is(.chat-popout, #chat-log) .message .message-header .name-stacked {
-  margin-left: .6em;
+  margin-left: .4em;
 }

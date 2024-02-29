@@ -1,0 +1,11 @@
+.dnd5e2 .name-stacked .subtitle {
+  display: none;
+}
+
+.dnd5e2.chat-card .description .summary > img {
+  display: none;
+}
+
+.dnd5e2 .name-stacked .title {
+  margin: .1em;
+}
