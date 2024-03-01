@@ -89,7 +89,7 @@
   gap: 0.15rem;
 }
 
-.dnd5e2 div:not(:has(.damge-application)) button {
+.dnd5e2 div:not(:has(.damage-application)) button {
   line-height: 20px;
 }
 
