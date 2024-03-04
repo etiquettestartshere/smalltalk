@@ -8,7 +8,7 @@
     "styles/styles.css"
   ],
   "flags": {"hotReload": {"extensions": ["css", "json"], "paths": ["styles/styles.css", "styles", "lang"]}},
-  "version": "0.1.3",
+  "version": "0.1.4",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
