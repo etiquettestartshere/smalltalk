@@ -18,10 +18,6 @@
   scale: 100%;
 }
 
-:is(.chat-popout, #chat-log) .message.ooc {
-  border-width: 2px;
-}
-
 :is(.chat-popout, #chat-log) .message .message-header .message-metadata {
   margin-top: 4px;
 }
