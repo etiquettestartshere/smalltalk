@@ -2,7 +2,7 @@
   "id": "smalltalk",
   "title": "Small Talk",
   "esmodules": [
-    "setup.mjs"
+    "scripts/setup.mjs"
   ],
   "styles": [
     "styles/styles.css"
