@@ -14,7 +14,7 @@ All settings are off by default.
 ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk1.webp) ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk2.webp)
 
 ## Compatibility
-I have not tested compatibility with any other modules that modify chat cards, and unless I use that module myself I am unlikely to (see CONTRIBUTING.md for more info). The only module I personally tested for compatibility is my other chat card based module [Effective Tray](https://github.com/etiquettestartshere/effectivetray) and Zhell's [Damage Application](https://github.com/krbz999/damage-application/).
+I have not tested compatibility with any other modules that modify chat cards, and unless I use that module myself I am unlikely to (see CONTRIBUTING.md for more info). The only module I personally tested for compatibility is my other chat card based module [Effective Tray](https://github.com/etiquettestartshere/effectivetray) and Zhell's [Damage Application](https://github.com/krbz999/damage-application/) and [Retroactive Advantage](https://github.com/krbz999/foundryvtt-retroactive-advantage-5e).
 ___
 ###### **Technical Details**
 
