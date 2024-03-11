@@ -7,8 +7,20 @@
   "styles": [
     "styles/styles.css"
   ],
-  "flags": {"hotReload": {"extensions": ["css", "json"], "paths": ["styles/styles.css", "styles", "lang"]}},
-  "version": "0.1.4",
+  "flags": {
+    "hotReload": {
+      "extensions": [
+        "css",
+        "json"
+      ],
+      "paths": [
+        "styles/styles.css",
+        "styles",
+        "lang"
+      ]
+    }
+  },
+  "version": "0.1.5",
   "compatibility": {
     "minimum": "11",
     "verified": "11"
