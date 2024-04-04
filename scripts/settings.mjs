@@ -18,6 +18,17 @@ export class settings {
       onChange: false
     });
 
+    game.settings.register(MODULE, "purpleWhispers", {
+      name: "SCENEMESSAGE.Settings.PurpleWhispersName",
+      hint: "SCENEMESSAGE.Settings.PurpleWhispersHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
+
     game.settings.register(MODULE, "hidePortrait", {
       name: "SCENEMESSAGE.Settings.HidePortraitName",
       hint: "SCENEMESSAGE.Settings.HidePortraitHint",

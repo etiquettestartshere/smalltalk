@@ -9,6 +9,7 @@ Reduces the size of dnd5e chat cards including overall space, button size, margi
 - Provides a setting to hide images on item cards.
 - Provides a setting to hide subtitles on item cards.
 - Provides a setting to make the hit checks vs AC blue rather than green (for red green colorblindness or aesthetic reasons).
+- Provides a setting to mark whispers and tint their background a pinkish purple.
 All settings are off by default.
 
 ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk1.webp) ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk2.webp)
