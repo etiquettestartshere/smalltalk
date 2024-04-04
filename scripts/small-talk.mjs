@@ -4,12 +4,14 @@ export class smallTalk {
 
   static init() {
     smallTalk._blueChecks();
+    smallTalk._purpleWhispers();
     smallTalk._hidePortrait();
     smallTalk._hideSubtitle();
     smallTalk._hideItemImg();
     smallTalk._hideItemSubtile();
     smallTalk._portraitAndSubtitle();
     Hooks.on("dnd5e.renderChatMessage", smallTalk._GM);
+    if (game.settings.get(MODULE, "purpleWhispers")) Hooks.on("dnd5e.renderChatMessage", smallTalk._whispers);
   };
 
   static _blueChecks() {
@@ -19,6 +21,14 @@ export class smallTalk {
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
+
+  static _purpleWhispers() {
+    const purple = game.settings.get(MODULE, "purpleWhispers");
+    if (purple) {
+      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/purple-whispers.css" />`
+      document.head.insertAdjacentHTML('beforeend', link);
+    };  
+  }
 
   static _hidePortrait() {
     const hideArt = game.settings.get(MODULE, "hidePortrait");
@@ -58,7 +68,7 @@ export class smallTalk {
     if (hideArt && hideSub) {
       const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/portrait-and-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
-    };  
+    };
   };
 
   static _GM(message, html) {
@@ -66,5 +76,10 @@ export class smallTalk {
       const subtitle = html.querySelector('.message-header .subtitle');
       subtitle.textContent = String.fromCharCode(8203);
     };  
+  };
+
+  static _whispers(message, html) {
+    const subtitle = html.querySelector('.message-header .subtitle');
+    subtitle.textContent = game.i18n.localize("SCENEMESSAGE.Whisper");
   };
 };

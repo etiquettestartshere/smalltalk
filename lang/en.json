@@ -1,4 +1,5 @@
 {
+  "SCENEMESSAGE.Whisper": "Whisper",
   "SCENEMESSAGE.Settings.BlueChecksName": "Blue Hit Checks",
   "SCENEMESSAGE.Settings.BlueChecksHint": "Use blue instead of green for hit checks vs AC (may be more red-green colorblind friendly).",
   "SCENEMESSAGE.Settings.HideItemImgName": "Hide Item Image",
@@ -8,5 +9,7 @@
   "SCENEMESSAGE.Settings.HidePortraitName": "Hide Portraits",
   "SCENEMESSAGE.Settings.HidePortraitHint": "Remove the portraits from chat cards.",
   "SCENEMESSAGE.Settings.HideSubtitleName": "Hide Subtitle",
-  "SCENEMESSAGE.Settings.HideSubtitleHint": "Hide the subtitle which shows the associated username"
+  "SCENEMESSAGE.Settings.HideSubtitleHint": "Hide the subtitle which shows the associated username",
+  "SCENEMESSAGE.Settings.PurpleWhispersName": "Purple Whispers",
+  "SCENEMESSAGE.Settings.PurpleWhispersHint": "Makes the background of whispered messages a slight pinkish purple and labels them, to better distinguish them from public messages."
 }
