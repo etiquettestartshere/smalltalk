@@ -1,8 +1,8 @@
-:is(.chat-popout, #chat-log) .message .message-header .subtitle {
+:is(.chat-popout, #chat-log) .message:not(.whisper) .message-header .subtitle {
   visibility: hidden;
 }
 
-:is(.chat-popout, #chat-log) .message .message-header .title {
+:is(.chat-popout, #chat-log) .message:not(.whisper) .message-header .title {
   position: relative;
   top: .2rem;
 }

@@ -79,7 +79,9 @@ export class smallTalk {
   };
 
   static _whispers(message, html) {
-    const subtitle = html.querySelector('.message-header .subtitle');
-    subtitle.textContent = game.i18n.localize("SCENEMESSAGE.Whisper");
+    if (message.type === 4) {
+      const subtitle = html.querySelector('.message-header .subtitle');
+      subtitle.textContent = game.i18n.localize("SCENEMESSAGE.Whisper");
+    };
   };
 };
