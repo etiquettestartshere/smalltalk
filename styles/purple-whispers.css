@@ -1,4 +1,4 @@
 :is(.chat-popout, #chat-log) .message.whisper::before {
   filter: hue-rotate(270deg)
-          saturate(2.5)
+          saturate(3)
 }

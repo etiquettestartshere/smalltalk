@@ -74,6 +74,7 @@ export class smallTalk {
   static _GM(message, html) {
     if ((!message.speaker.actor && !message.speaker.token) || (!game.settings.get(MODULE, "hidePortrait") && game.settings.get(MODULE, "hideSubtitle"))) {
       const subtitle = html.querySelector('.message-header .subtitle');
+      if (subtitle.textContent.includes("To:")) return;
       subtitle.textContent = String.fromCharCode(8203);
     };  
   };
@@ -81,6 +82,7 @@ export class smallTalk {
   static _whispers(message, html) {
     if (message.type === 4) {
       const subtitle = html.querySelector('.message-header .subtitle');
+      if (subtitle.textContent.includes("To:")) return;
       subtitle.textContent = game.i18n.localize("SCENEMESSAGE.Whisper");
     };
   };
