@@ -98,10 +98,12 @@ export class smallTalk {
   };
 
   static _whispers(message, html) {
-    if (message.type === 4) {
+    if (message.type === 4 || (message.type === 5 && message.whisper.length)) {
       const subtitle = html.querySelector('.message-header .subtitle');
       if (subtitle.textContent.includes("To:")) return;
-      subtitle.textContent = game.i18n.localize("SMALLTALK.Whisper");
+      subtitle.textContent === String.fromCharCode(8203) ?
+      subtitle.textContent = `(${game.i18n.localize("SMALLTALK.Whisper")})` :
+      subtitle.textContent += " " + `(${game.i18n.localize("SMALLTALK.Whisper")})`;
     };
   };
 };

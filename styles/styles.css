@@ -60,7 +60,7 @@
   min-height: 1px;
   max-height: 13px;
   position: relative;
-  bottom: .22rem;
+  bottom: .170rem;
 }
 
 :is(.chat-popout, #chat-log) .message .message-header .flavor-text {
