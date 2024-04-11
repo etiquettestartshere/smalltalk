@@ -10,6 +10,7 @@ A module that makes dnd5e chat messages smaller by reducing overall size, button
 - **Trash Button**: Replaces the ellipsis context menu button on messages with a trash button (similar to version 2) to allow for one click deletion (use at your own risk).
 - **Purple Whispers**: Makes the background of whispered messages a slight pinkish purple and labels them, to better distinguish them from public messages.
 - **Blue Hit Checks**: Use blue instead of green for hit checks vs AC (may be more red-green colorblind friendly).
+
 All settings are off by default.
 
 ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk1.webp) ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk2.webp)
