@@ -1,15 +1,15 @@
 # Small Talk (for D&D Fifth Edition)
 
-A module that makes chat messages smaller.
+A module that makes dnd5e chat messages smaller by reducing overall size, button size, margins, portrait size, subtitle size, and so on (also adds some other opinionated css chat tweaks).
 
-## What it does 
-Reduces the size of dnd5e chat cards including overall space, button size, margins, portrait size, subtitle size, and so on.
-- Provides a setting to hide the portrait image.
-- Provides a setting to hide the subtitle (username).
-- Provides a setting to hide images on item cards.
-- Provides a setting to hide subtitles on item cards.
-- Provides a setting to make the hit checks vs AC blue rather than green (for red green colorblindness or aesthetic reasons).
-- Provides a setting to mark whispers and tint their background a pinkish purple.
+## Settings
+- **Hide Portraits**: Remove the portraits from chat cards.
+- **Hide Subtitle**: Hide the subtitle which shows, among other things, the associated username.
+- **Hide Item Image**: Hides the item image on item chat cards.
+- **Hide Item Subtitle**: Hides the item subtitle on item chat cards. Caution: this may contain useful information in play.
+- **Trash Button**: Replaces the ellipsis context menu button on messages with a trash button (similar to version 2) to allow for one click deletion (use at your own risk).
+- **Purple Whispers**: Makes the background of whispered messages a slight pinkish purple and labels them, to better distinguish them from public messages.
+- **Blue Hit Checks**: Use blue instead of green for hit checks vs AC (may be more red-green colorblind friendly).
 All settings are off by default.
 
 ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk1.webp) ![image](https://github.com/etiquettestartshere/smalltalk/blob/main/img/smalltalk2.webp)
