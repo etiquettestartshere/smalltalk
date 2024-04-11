@@ -7,31 +7,10 @@ export class settings {
   };
   
   static _settings() {
-    game.settings.register(MODULE, "blueChecks", {
-      name: "SCENEMESSAGE.Settings.BlueChecksName",
-      hint: "SCENEMESSAGE.Settings.BlueChecksHint",
-      scope: "client",
-      config: true,
-      type: Boolean,
-      default: false,
-      requiresReload: true,
-      onChange: false
-    });
-
-    game.settings.register(MODULE, "purpleWhispers", {
-      name: "SCENEMESSAGE.Settings.PurpleWhispersName",
-      hint: "SCENEMESSAGE.Settings.PurpleWhispersHint",
-      scope: "client",
-      config: true,
-      type: Boolean,
-      default: false,
-      requiresReload: true,
-      onChange: false
-    });
 
     game.settings.register(MODULE, "hidePortrait", {
-      name: "SCENEMESSAGE.Settings.HidePortraitName",
-      hint: "SCENEMESSAGE.Settings.HidePortraitHint",
+      name: "SMALLTALK.Settings.HidePortraitName",
+      hint: "SMALLTALK.Settings.HidePortraitHint",
       scope: "client",
       config: true,
       type: Boolean,
@@ -41,8 +20,8 @@ export class settings {
     });
 
     game.settings.register(MODULE, "hideSubtitle", {
-      name: "SCENEMESSAGE.Settings.HideSubtitleName",
-      hint: "SCENEMESSAGE.Settings.HideSubtitleHint",
+      name: "SMALLTALK.Settings.HideSubtitleName",
+      hint: "SMALLTALK.Settings.HideSubtitleHint",
       scope: "client",
       config: true,
       type: Boolean,
@@ -52,8 +31,8 @@ export class settings {
     });
 
     game.settings.register(MODULE, "hideItemImg", {
-      name: "SCENEMESSAGE.Settings.HideItemImgName",
-      hint: "SCENEMESSAGE.Settings.HideItemImgHint",
+      name: "SMALLTALK.Settings.HideItemImgName",
+      hint: "SMALLTALK.Settings.HideItemImgHint",
       scope: "client",
       config: true,
       type: Boolean,
@@ -63,8 +42,41 @@ export class settings {
     });
 
     game.settings.register(MODULE, "hideItemSubtitle", {
-      name: "SCENEMESSAGE.Settings.HideItemSubtitleName",
-      hint: "SCENEMESSAGE.Settings.HideItemSubtitleHint",
+      name: "SMALLTALK.Settings.HideItemSubtitleName",
+      hint: "SMALLTALK.Settings.HideItemSubtitleHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
+
+    game.settings.register(MODULE, "trashButton", {
+      name: "SMALLTALK.Settings.TrashIconName",
+      hint: "SMALLTALK.Settings.TrashIconHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
+
+    game.settings.register(MODULE, "purpleWhispers", {
+      name: "SMALLTALK.Settings.PurpleWhispersName",
+      hint: "SMALLTALK.Settings.PurpleWhispersHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
+
+    game.settings.register(MODULE, "blueChecks", {
+      name: "SMALLTALK.Settings.BlueChecksName",
+      hint: "SMALLTALK.Settings.BlueChecksHint",
       scope: "client",
       config: true,
       type: Boolean,

@@ -19,6 +19,7 @@
 
 :is(.chat-popout, #chat-log) .message .message-header .message-metadata {
   margin-top: 4px;
+  margin-right: 2px;
 }
 
 :is(.chat-popout, #chat-log) .message .message-header {
@@ -64,10 +65,14 @@
 
 :is(.chat-popout, #chat-log) .message .message-header .flavor-text {
   position: relative;
-  top: .38em;
+  top: .65em;
   margin-bottom: .5em;
   margin-left: .32em;
   margin-block-start: -8px;
+}
+
+:is(.chat-popout, #chat-log) .message .whisper:has(.flavor-text) {
+
 }
 
 :is(.chat-popout, #chat-log) .message > .message-content,
