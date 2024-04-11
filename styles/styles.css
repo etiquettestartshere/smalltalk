@@ -71,10 +71,6 @@
   margin-block-start: -8px;
 }
 
-:is(.chat-popout, #chat-log) .message .whisper:has(.flavor-text) {
-
-}
-
 :is(.chat-popout, #chat-log) .message > .message-content,
 :is(.chat-popout, #chat-log) .message > .message-content:not(:has(div .dnd5e2, .dice-roll/*, .nue*/)) {
   position: relative;
