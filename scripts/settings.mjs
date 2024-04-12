@@ -71,7 +71,9 @@ export class settings {
       type: Boolean,
       default: false,
       requiresReload: true,
-      onChange: false
+      onChange: () => { Array.from(document.styleSheets).find((e) => e.href?.includes("/modules/smalltalk/purple-whispers")).disabled = 
+        (game.settings.get(MODULE, "defaultChat") ? false : true);
+      }
     });
 
     game.settings.register(MODULE, "blueChecks", {
@@ -83,6 +85,20 @@ export class settings {
       default: false,
       requiresReload: true,
       onChange: false
+    });
+
+    // TODO localize
+    game.settings.register(MODULE, "defaultChat", {
+      name: "Default Chat",
+      hint: "Default Chat",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: false,
+      onChange: () => { Array.from(document.styleSheets).find((e) => e.href?.includes("/modules/smalltalk/styles")).disabled = 
+        (game.settings.get(MODULE, "defaultChat") ? false : true);
+      }
     });
   };
 };    
