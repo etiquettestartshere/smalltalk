@@ -1,7 +1,10 @@
 {
+  "SMALLTALK.Blind": "Blind",
   "SMALLTALK.Whisper": "Whisper",
   "SMALLTALK.Settings.BlueChecksName": "Blue Hit Checks",
   "SMALLTALK.Settings.BlueChecksHint": "For GMs, use blue instead of green for hit checks vs AC (may be more red-green colorblind friendly).",
+  "SMALLTALK.Settings.DefaultChatName": "Default Chat Appearance",
+  "SMALLTALK.Settings.DefaultChatHint": "Use a (mostly) default chat message size and appearance, in order to only use one of the extra settings.",
   "SMALLTALK.Settings.HideItemImgName": "Hide Item Image",
   "SMALLTALK.Settings.HideItemImgHint": "Hides the item image on item chat cards.",
   "SMALLTALK.Settings.HideItemSubtitleName": "Hide Item Subtitle",

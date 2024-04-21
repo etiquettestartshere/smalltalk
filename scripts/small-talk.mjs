@@ -9,10 +9,12 @@ export class smallTalk {
     smallTalk._hideSubtitle();
     smallTalk._hideItemImg();
     smallTalk._hideItemSubtile();
-    smallTalk._portraitAndSubtitle();
     Hooks.on("dnd5e.renderChatMessage", smallTalk._GM);
     if (game.settings.get(MODULE, "trashButton")) Hooks.on("dnd5e.renderChatMessage", smallTalk._trash);
     if (game.settings.get(MODULE, "purpleWhispers")) Hooks.on("dnd5e.renderChatMessage", smallTalk._whispers);
+    if (game.settings.get(MODULE, "defaultChat")) {
+      Array.from(document.styleSheets).find((e) => e.href?.includes("/modules/smalltalk/styles")).disabled = true;
+    };  
   };
 
   static _blueChecks() {
@@ -63,15 +65,6 @@ export class smallTalk {
     };  
   };
 
-  static _portraitAndSubtitle() {
-    const hideArt = game.settings.get(MODULE, "hidePortrait");
-    const hideSub = game.settings.get(MODULE, "hideSubtitle");
-    if (hideArt && hideSub) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/portrait-and-subtitle.css" />`
-      document.head.insertAdjacentHTML('beforeend', link);
-    };
-  };
-
   static _trash(message, html) {
     html.querySelector('.chat-control').remove();
     const time = html.querySelector('.message-timestamp');
@@ -100,10 +93,11 @@ export class smallTalk {
   static _whispers(message, html) {
     if (message.type === 4 || (message.type === 5 && message.whisper.length)) {
       const subtitle = html.querySelector('.message-header .subtitle');
+      const label = html.classList.value.includes("blind") ? game.i18n.localize("SMALLTALK.Blind") : game.i18n.localize("SMALLTALK.Whisper");
       if (subtitle.textContent.includes("To:")) return;
       subtitle.textContent === String.fromCharCode(8203) ?
-      subtitle.textContent = `(${game.i18n.localize("SMALLTALK.Whisper")})` :
-      subtitle.textContent += " " + `(${game.i18n.localize("SMALLTALK.Whisper")})`;
+      subtitle.textContent = `(${label})` :
+      subtitle.textContent += " " + `(${label})`;
     };
   };
 };
