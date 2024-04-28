@@ -12,6 +12,7 @@ export class smallTalk {
     Hooks.on("dnd5e.renderChatMessage", smallTalk._GM);
     if (game.settings.get(MODULE, "trashButton")) Hooks.on("dnd5e.renderChatMessage", smallTalk._trash);
     if (game.settings.get(MODULE, "purpleWhispers")) Hooks.on("dnd5e.renderChatMessage", smallTalk._whispers);
+    if (game.settings.get(MODULE, "tokenPortrait")) Hooks.on("dnd5e.renderChatMessage", smallTalk._tokenPortrait);
     if (game.settings.get(MODULE, "defaultChat")) {
       Array.from(document.styleSheets).find((e) => e.href?.includes("/modules/smalltalk/styles")).disabled = true;
     };  
@@ -96,8 +97,17 @@ export class smallTalk {
       const label = html.classList.value.includes("blind") ? game.i18n.localize("SMALLTALK.Blind") : game.i18n.localize("SMALLTALK.Whisper");
       if (subtitle.textContent.includes("To:")) return;
       subtitle.textContent === String.fromCharCode(8203) ?
-      subtitle.textContent = `(${label})` :
-      subtitle.textContent += " " + `(${label})`;
+      subtitle.textContent = `${label}` :
+      subtitle.textContent += " " + `${label}`;
     };
+  };
+
+  static _tokenPortrait(message, html) {
+    if (!message.speaker.token) return;
+    const avatar = html.querySelector('div.avatar img');
+    if (!avatar) return;
+    const token = game.scenes?.get(message.speaker.scene).tokens.get(message.speaker.token)?.texture?.src;
+    if (!token) return;
+    avatar.setAttribute("src", token);
   };
 };

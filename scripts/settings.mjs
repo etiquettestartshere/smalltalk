@@ -19,6 +19,17 @@ export class settings {
       onChange: false
     });
 
+    game.settings.register(MODULE, "tokenPortrait", {
+      name: "SMALLTALK.Settings.TokenPortraitName",
+      hint: "SMALLTALK.Settings.TokenPortraitHint",
+      scope: "client",
+      config: true,
+      type: Boolean,
+      default: false,
+      requiresReload: true,
+      onChange: false
+    });
+
     game.settings.register(MODULE, "hideSubtitle", {
       name: "SMALLTALK.Settings.HideSubtitleName",
       hint: "SMALLTALK.Settings.HideSubtitleHint",

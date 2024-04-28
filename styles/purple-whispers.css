@@ -1,10 +1,10 @@
 :is(.chat-popout, #chat-log) .message.whisper::before {
   filter: hue-rotate(270deg)
-          saturate(4)
+          saturate(3.5)
 }
 
 :is(.chat-popout, #chat-log) .message.whisper.blind::before {
   mix-blend-mode: unset;
-  filter: hue-rotate(240deg)
-          saturate(4);
+  filter: hue-rotate(230deg)
+          saturate(3.5);
 }
