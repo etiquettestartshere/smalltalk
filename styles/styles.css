@@ -58,9 +58,9 @@
 
 :is(.chat-popout, #chat-log) .message .message-header .subtitle {
   min-height: 1px;
-  max-height: 13px;
+  line-height: 14px;
   position: relative;
-  bottom: .17rem;
+  bottom: .07rem;
 }
 
 :is(.chat-popout, #chat-log) .message .message-header .flavor-text {
