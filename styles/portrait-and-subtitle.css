@@ -1,8 +1,0 @@
-:is(.chat-popout, #chat-log) .message > .message-header {
-  margin-bottom: -1px;
-}
-
-:is(.chat-popout, #chat-log) .message .message-header .name-stacked {
-  position: relative;
-  bottom: .05rem;
-}
