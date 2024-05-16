@@ -14,14 +14,14 @@ export class smallTalk {
     if (game.settings.get(MODULE, "purpleWhispers")) Hooks.on("dnd5e.renderChatMessage", smallTalk._whispers);
     if (game.settings.get(MODULE, "tokenPortrait")) Hooks.on("dnd5e.renderChatMessage", smallTalk._tokenPortrait);
     if (game.settings.get(MODULE, "defaultChat")) {
-      Array.from(document.styleSheets).find((e) => e.href?.includes("/modules/smalltalk/styles")).disabled = true;
+      Array.from(document.styleSheets).find((e) => e.href?.includes("modules/smalltalk/styles")).disabled = true;
     };  
   };
 
   static _blueChecks() {
     const blue = game.settings.get(MODULE, "blueChecks");
     if (blue) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/blue-hit-check.css" />`
+      const link = `<link rel="stylesheet" href="modules/smalltalk/styles/blue-hit-check.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
@@ -29,7 +29,7 @@ export class smallTalk {
   static _purpleWhispers() {
     const purple = game.settings.get(MODULE, "purpleWhispers");
     if (purple) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/purple-whispers.css" />`
+      const link = `<link rel="stylesheet" href="modules/smalltalk/styles/purple-whispers.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   }
@@ -37,7 +37,7 @@ export class smallTalk {
   static _hidePortrait() {
     const hideArt = game.settings.get(MODULE, "hidePortrait");
     if (hideArt) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-portrait.css" />`
+      const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-portrait.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };
   };
@@ -45,7 +45,7 @@ export class smallTalk {
   static _hideSubtitle() {
     const hideSub = game.settings.get(MODULE, "hideSubtitle");
     if (hideSub) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-subtitle.css" />`
+      const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
@@ -53,7 +53,7 @@ export class smallTalk {
   static _hideItemImg() {
     const hideArt = game.settings.get(MODULE, "hideItemImg");
     if (hideArt) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-item-img.css" />`
+      const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-item-img.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };
@@ -61,7 +61,7 @@ export class smallTalk {
   static _hideItemSubtile() {
     const hideSub = game.settings.get(MODULE, "hideItemSubtitle");
     if (hideSub) {
-      const link = `<link rel="stylesheet" href="/modules/smalltalk/styles/hide-item-subtitle.css" />`
+      const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-item-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
   };

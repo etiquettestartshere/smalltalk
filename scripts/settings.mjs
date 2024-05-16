@@ -104,7 +104,7 @@ export class settings {
       type: Boolean,
       default: false,
       requiresReload: false,
-      onChange: () => { Array.from(document.styleSheets).find((e) => e.href?.includes("/modules/smalltalk/styles")).disabled = 
+      onChange: () => { Array.from(document.styleSheets).find((e) => e.href?.includes("modules/smalltalk/styles")).disabled = 
         (game.settings.get(MODULE, "defaultChat") ? true : false);
       }
     });
