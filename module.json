@@ -20,10 +20,10 @@
       ]
     }
   },
-  "version": "0.2.1",
+  "version": "0.3.0",
   "compatibility": {
     "minimum": "11",
-    "verified": "11"
+    "verified": "12"
   },
   "languages": [
     {
