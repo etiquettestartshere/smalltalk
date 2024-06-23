@@ -23,7 +23,7 @@
 }
 
 :is(.chat-popout, #chat-log) .message .message-header {
-  margin-bottom: 3px;
+  margin-bottom: 3.6px;
   bottom: 1px;
   position: relative;
 }
