@@ -132,18 +132,3 @@
   width: 28px;
   height: 28px;
 }
-
-* {
-  scrollbar-color: initial;
-}
-
-::-webkit-scrollbar-thumb {
-  border-color: var(--color-border-highlight);
-}
-
-@-moz-document url-prefix() {
-  * {
-      scrollbar-color: #782e22 #111;
-      scrollbar-width: thin;
-  }
-}
