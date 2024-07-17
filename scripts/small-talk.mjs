@@ -104,7 +104,7 @@ export class smallTalk {
 
   static _tokenPortrait(message, html) {
     if (!message.speaker.token) return;
-    const avatar = html.querySelector('div.avatar img');
+    const avatar = html.querySelector('a.avatar img');
     if (!avatar) return;
     const token = game.scenes?.get(message.speaker.scene).tokens.get(message.speaker.token)?.texture?.src;
     if (!token) return;
