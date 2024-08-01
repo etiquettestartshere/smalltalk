@@ -1,7 +1,9 @@
-.dnd5e2 .card-header .name-stacked .subtitle {
-  display: none;
-} 
+.dnd5e2 .card-header .name-stacked {
+  .subtitle {
+    display: none;
+  }
 
-.dnd5e2 .card-header .name-stacked .title {
-  margin-top: unset;
+  .title {
+    margin-top: unset;
+  }
 }
