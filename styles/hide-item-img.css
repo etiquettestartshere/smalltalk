@@ -2,12 +2,14 @@
   display: none;
 }
 
-.dnd5e2 .card-header .name-stacked .subtitle {
-  position: relative;
-  bottom: 4px;
-  margin-bottom: -6px;
-}
+.dnd5e2 .card-header .name-stacked {
+  .subtitle {
+    position: relative;
+    bottom: 4px;
+    margin-bottom: -6px;
+  }
 
-.dnd5e2 .card-header .name-stacked .title {
-  margin-top: -4px;
+  .title {
+    margin-top: -4px;
+  }
 }

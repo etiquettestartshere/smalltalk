@@ -1,7 +1,9 @@
-:is(.chat-popout, #chat-log) .message .message-header .message-sender .avatar {
-  display: none;
-}
+:is(.chat-popout, #chat-log) .message .message-header {
+  .message-sender .avatar {
+    display: none;
+  }
 
-:is(.chat-popout, #chat-log) .message .message-header .name-stacked {
-  margin-left: .4em;
+  .name-stacked {
+    margin-left: .4em;
+  }
 }
