@@ -16,7 +16,7 @@ export class smallTalk {
     if (game.settings.get(MODULE, "defaultChat")) {
       Array.from(document.styleSheets).find((e) => e.href?.includes("modules/smalltalk/styles")).disabled = true;
     };  
-  };
+  }
 
   static _blueChecks() {
     const blue = game.settings.get(MODULE, "blueChecks");
@@ -24,7 +24,7 @@ export class smallTalk {
       const link = `<link rel="stylesheet" href="modules/smalltalk/styles/blue-hit-check.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
-  };
+  }
 
   static _purpleWhispers() {
     const purple = game.settings.get(MODULE, "purpleWhispers");
@@ -40,7 +40,7 @@ export class smallTalk {
       const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-portrait.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };
-  };
+  }
 
   static _hideSubtitle() {
     const hideSub = game.settings.get(MODULE, "hideSubtitle");
@@ -48,7 +48,7 @@ export class smallTalk {
       const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
-  };
+  }
 
   static _hideItemImg() {
     const hideArt = game.settings.get(MODULE, "hideItemImg");
@@ -56,7 +56,7 @@ export class smallTalk {
       const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-item-img.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
-  };
+  }
 
   static _hideItemSubtile() {
     const hideSub = game.settings.get(MODULE, "hideItemSubtitle");
@@ -64,7 +64,7 @@ export class smallTalk {
       const link = `<link rel="stylesheet" href="modules/smalltalk/styles/hide-item-subtitle.css" />`
       document.head.insertAdjacentHTML('beforeend', link);
     };  
-  };
+  }
 
   static _trash(message, html) {
     html.querySelector('.chat-control').remove();
@@ -79,7 +79,7 @@ export class smallTalk {
     trash.addEventListener('click', () => {
       message.delete();
     });
-  };
+  }
 
   static _GM(message, html) {
     const subtitle = html.querySelector('.message-header .subtitle');
@@ -89,7 +89,7 @@ export class smallTalk {
       if (subtitle.textContent.includes("To:")) return;
       subtitle.textContent = String.fromCharCode(8203);
     };  
-  };
+  }
 
   static _whispers(message, html) {
     if (message.type === 4 || (message.type === 5 && message.whisper.length)) {
@@ -100,7 +100,7 @@ export class smallTalk {
       subtitle.textContent = `${label}` :
       subtitle.textContent += " " + `${label}`;
     };
-  };
+  }
 
   static _tokenPortrait(message, html) {
     if (!message.speaker.token) return;
@@ -109,5 +109,5 @@ export class smallTalk {
     const token = game.scenes?.get(message.speaker.scene).tokens.get(message.speaker.token)?.texture?.src;
     if (!token) return;
     avatar.setAttribute("src", token);
-  };
-};
+  }
+}
