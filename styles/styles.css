@@ -2,17 +2,26 @@
 :is(.chat-popout, #chat-log) .message>.message-content:not(:has(div .dnd5e2, .dice-roll)) {
   position: relative;
   padding: 2px;
-  margin: -4px;
-  margin-bottom: 0.1em;
+  margin: -5px;
+  margin-top: -0.2em;
+  margin-bottom: -0.05em;
   margin-right: 2px;
   margin-left: 2px;
+
+  .reference-link a {
+    padding: 0px 4px;
+  }
+
+  .effects.unlist {
+    margin-bottom: .1em !important;
+  }
 }
 
 :is(.chat-popout, #chat-log) .message {
-  padding: .16em;
-
+  padding: .05em;
+  
   .message-header {
-    margin-bottom: 3.6px;
+    margin-bottom: 0.6px;
     bottom: 1px;
     position: relative;
 
@@ -26,7 +35,6 @@
       align-items: start;
 
       .avatar {
-        place-content: center;
         position: relative;
         min-height: unset;
         left: 3px;
@@ -58,7 +66,7 @@
     .flavor-text {
       position: relative;
       top: .65em;
-      margin-bottom: .5em;
+      margin-bottom: .71em;
       margin-left: .32em;
       margin-block-start: -8px;
     }
@@ -98,7 +106,7 @@
 }
 
 .dnd5e2.chat-card {
-  gap: 0.170rem;
+  gap: 0.100rem;
 
   .card-buttons {
     gap: 0.15rem;
@@ -106,6 +114,7 @@
 
   .description {
     padding: 0.15rem;
+    margin-bottom: 0.05rem;
   }
 
   +.dice-roll {
@@ -126,6 +135,10 @@
 
   div:not(:has(.damage-application)) button {
     line-height: 20px;
+  }
+
+  .pills {
+    gap: 0.15rem;
   }
 }
 

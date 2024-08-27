@@ -4,7 +4,7 @@ export class settings {
 
   static init() {
     settings._settings();
-  };
+  }
   
   static _settings() {
 
@@ -108,5 +108,5 @@ export class settings {
         (game.settings.get(MODULE, "defaultChat") ? true : false);
       }
     });
-  };
-};    
+  }
+}

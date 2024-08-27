@@ -1,1 +1,1 @@
-export const MODULE = "smalltalk"
+export const MODULE = "smalltalk";
