@@ -8,7 +8,10 @@
   margin-right: 2px;
   margin-left: 2px;
 
-  .reference-link a {
+  .reference-link a,
+  a.content-link,
+  a.inline-roll,
+  .roll-link a {
     padding: 0px 4px;
   }
 
@@ -102,6 +105,10 @@
       width: 28px;
       height: 28px;
     }
+  }
+
+  .dice .total .label {
+    white-space: nowrap;
   }
 }
 
