@@ -14,13 +14,12 @@
         "json"
       ],
       "paths": [
-        "styles/styles.css",
         "styles",
         "lang"
       ]
     }
   },
-  "version": "0.3.5",
+  "version": "0.3.6",
   "compatibility": {
     "minimum": "11",
     "verified": "12"
