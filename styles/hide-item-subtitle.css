@@ -1,9 +1,10 @@
 .dnd5e2 .card-header .name-stacked {
-  .subtitle {
+
+  & .subtitle {
     display: none;
   }
 
-  .title {
+  & .title {
     margin-top: unset;
   }
 }

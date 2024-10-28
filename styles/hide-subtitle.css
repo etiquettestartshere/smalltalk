@@ -1,9 +1,10 @@
 :is(.chat-popout, #chat-log) .message:not(.whisper) .message-header {
-  .subtitle {
+  
+  & .subtitle {
     visibility: hidden;
   }
 
-  .title {
+  & .title {
     position: relative;
     top: .2rem;
   }

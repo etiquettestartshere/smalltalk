@@ -8,14 +8,14 @@
   margin-right: 2px;
   margin-left: 2px;
 
-  .reference-link a,
-  a.content-link,
-  a.inline-roll,
-  .roll-link a {
+  & .reference-link a,
+  & a.content-link,
+  & a.inline-roll,
+  & .roll-link a {
     padding: 0px 4px;
   }
 
-  .effects.unlist {
+  & .effects.unlist {
     margin-bottom: .1em !important;
   }
 }
@@ -23,27 +23,27 @@
 :is(.chat-popout, #chat-log) .message {
   padding: .05em;
   
-  .message-header {
+  & .message-header {
     margin-bottom: 0.6px;
     bottom: 1px;
     position: relative;
 
-    .message-metadata {
+    & .message-metadata {
       margin-top: 4px;
       margin-right: 2px;
     }
 
-    .message-sender {
+    & .message-sender {
       display: flex;
       align-items: start;
 
-      .avatar {
+      & .avatar {
         position: relative;
         min-height: unset;
         left: 3px;
         right: 0px;
 
-        img {
+        & img {
           width: 25px;
           height: 25px;
           scale: 100%;
@@ -51,7 +51,7 @@
       }
     }
 
-    .title {
+    & .title {
       font-family: var(--dnd5e-font-roboto-slab);
       font-size: var(--font-size-12);
       font-weight: bold;
@@ -59,14 +59,14 @@
       min-height: unset;
     }
 
-    .subtitle {
+    & .subtitle {
       min-height: 1px;
       line-height: 14px;
       position: relative;
       bottom: .07rem;
     }
 
-    .flavor-text {
+    & .flavor-text {
       position: relative;
       top: .65em;
       margin-bottom: .71em;
@@ -74,7 +74,7 @@
       margin-block-start: -8px;
     }
 
-    .name-stacked {
+    & .name-stacked {
       flex: 1;
       display: flex;
       min-height: unset;
@@ -90,24 +90,24 @@
     }
   }
 
-  .dnd5e2.evaluation {
+  & .dnd5e2.evaluation {
     margin: 0.170rem 0 0;
     gap: 0;
 
-    .target .name-stacked .title {
+    & .target .name-stacked .title {
       font-size: var(--font-size-13);
       display: flex;
       align-items: center;
       gap: 0.170rem;
     }
 
-    .target>img {
+    & .target>img {
       width: 28px;
       height: 28px;
     }
   }
 
-  .dice .total .label {
+  & .dice .total .label {
     white-space: nowrap;
   }
 }
@@ -115,16 +115,16 @@
 .dnd5e2.chat-card {
   gap: 0.100rem;
 
-  .card-buttons {
+  & .card-buttons {
     gap: 0.15rem;
   }
 
-  .description {
+  & .description {
     padding: 0.15rem;
     margin-bottom: 0.05rem;
   }
 
-  +.dice-roll {
+  & +.dice-roll {
     margin-top: 0.170rem;
   }
 }
@@ -132,30 +132,34 @@
 
 .dnd5e2 {
 
-  button[data-action="save"] {
+  & button[data-action="save"] {
     font-size: .73rem;
   }
 
-  button > i {
+  & button > i {
       margin-right: unset;
   }
 
-  div:not(:has(.damage-application)) button {
+  & div:not(:has(.damage-application)) button {
     line-height: 20px;
+
+    &:has(.visible-dc, .hidden-dc) {
+      font-size: var(--font-size-12)
+    }  
   }
 
-  .pills {
+  & .pills {
     gap: 0.15rem;
   }
 }
 
 .dice-result {
 
-  .dice-formula {
+  & .dice-formula {
     line-height: 20px;
   }
 
-  .dice-total {
+  & .dice-total {
     font-weight: bold;
     font-size: var(--font-size-20);
     padding: 0.075rem;

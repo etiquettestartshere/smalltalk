@@ -3,13 +3,14 @@
 }
 
 .dnd5e2 .card-header .name-stacked {
-  .subtitle {
+  
+  & .subtitle {
     position: relative;
     bottom: 4px;
     margin-bottom: -6px;
   }
 
-  .title {
+  & .title {
     margin-top: -4px;
   }
 }
