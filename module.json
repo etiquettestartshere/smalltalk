@@ -19,7 +19,7 @@
       ]
     }
   },
-  "version": "4.0.1",
+  "version": "4.1.0",
   "compatibility": {
     "minimum": "11",
     "verified": "12"
@@ -37,7 +37,7 @@
       {
         "id": "dnd5e",
         "type": "system",
-        "compatibility": {}
+        "compatibility": {"minimum": "4.0.0", "maximum": "4.1.9999"}
       }
     ]
   },
