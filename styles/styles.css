@@ -127,10 +127,14 @@
   & +.dice-roll {
     margin-top: 0.170rem;
   }
+
+  & .order-description {
+    padding: 1px;
+    margin: unset;
+  }
 }
 
-
-.dnd5e2 {
+.message .dnd5e2 {
 
   & button[data-action="save"] {
     font-size: .73rem;
@@ -151,9 +155,13 @@
   & .pills {
     gap: 0.15rem;
   }
+
+  & .separated-list.single-item > li {
+    padding: 2px;
+  }
 }
 
-.dice-result {
+.message .dice-result {
 
   & .dice-formula {
     line-height: 20px;
